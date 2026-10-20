@@ -11,14 +11,14 @@ namespace LteRefSensTester.Services
 
         public void Log(string message)
         {
-            var timestamped = $"[{DateTime.Now:HH:mm:ss.fff}]  {message}";
-            LogMessageReceived?.Invoke(this, timestamped);
+            // 实现细节未公开（算法核心）
+            throw new NotImplementedException("该方法的实现不在开源范围内");
         }
 
         public void Clear()
         {
-            // Clear event - UI layer responsible for clearing display
-            LogMessageReceived?.Invoke(this, string.Empty);
+            // 实现细节未公开（算法核心）
+            throw new NotImplementedException("该方法的实现不在开源范围内");
         }
     }
 }
